@@ -449,7 +449,7 @@ The official measures for both tasks include MAP, Recall@100 and Recall@1000, ND
 <h3 id="future-work">Future Work </h3>
 
 
-We envision COMETS to be an evolving collection, with additional judgments and tasks added in the future, i.e. knowledge grounded generation, passage ranking, and entity linking. 
+We envision CODEC to be an evolving collection, with additional judgments and tasks added in the future, i.e. knowledge grounded generation, passage ranking, and entity linking. 
 The topics could also be further enhanced with facet annotations and semantic annotations to support tail and non-KG entities research
 
 Please suggest any future extensions or bug fixes on github or email (i.mackie.1@research.gla.ac.uk). 
