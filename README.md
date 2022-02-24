@@ -63,8 +63,8 @@ This work is currently under review. More details and correct citation to follow
   <ul>
     <li><a href="https://github.com/grill-lab/CODEC/blob/main/topics/topics.json">Topics</a> 
     <li><a href="https://github.com/grill-lab/CODEC/blob/main/topics/query_reformulations_to_judgments.json">Query reformulations</a> 
-    <li><a href="https://github.com/grill-lab/CODEC/blob/main/qrels/document_binary.qrels">Document qrels</a></li>
-    <li><a href="https://github.com/grill-lab/CODEC/blob/main/qrels/entity_binary.qrels">Entity qrels</a></li>
+    <li><a href="https://github.com/grill-lab/CODEC/blob/main/qrels/document.qrels">Document qrels</a></li>
+    <li><a href="https://github.com/grill-lab/CODEC/blob/main/qrels/entity.qrels">Entity qrels</a></li>
     <li><a href="https://github.com/grill-lab/CODEC/blob/main/baselines/folds/folds.json">Standard 5-folds</a></li>
     <li><a href="https://github.com/grill-lab/CODEC/blob/main/baselines/runs">Baseline runs</a></li>
 
@@ -307,7 +307,7 @@ We also release <a href="https://github.com/informagi/REL">REL</a> entity links 
    
 <!-- Evaluation -->
 
-We provide TREC-style query-relevance files (entity rankings: <a href="https://github.com/grill-lab/CODEC/blob/main/qrels/entity_binary.qrels">link</a>) and (document ranking: <a href="https://github.com/grill-lab/CODEC/blob/main/qrels/document_binary.qrels">link</a>). 
+We provide TREC-style query-relevance files (entity rankings: <a href="https://github.com/grill-lab/CODEC/blob/main/qrels/entity.qrels">link</a>) and (document ranking: <a href="https://github.com/grill-lab/CODEC/blob/main/qrels/document.qrels">link</a>). 
 
 The official measures for both tasks include MAP, Recall@100 and Recall@1000, NDCG@10 and NDCG@1000.
 
