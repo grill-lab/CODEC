@@ -1,0 +1,54 @@
+{
+    "1": {
+        "bm25": {
+            "k1": 4.7,
+            "b": 0.2
+        },
+        "bm25+rm3": {
+            "k1": 4.7,
+            "b": 0.2,
+            "fb_terms": 75,
+            "fb_docs": 5,
+            "original_query_weight": 0.6
+        }
+    },
+    "2": {
+        "bm25": {
+            "k1": 4.9,
+            "b": 0.2
+        },
+        "bm25+rm3": {
+            "k1": 4.9,
+            "b": 0.2,
+            "fb_terms": 75,
+            "fb_docs": 5,
+            "original_query_weight": 0.6
+        }
+    },
+    "3": {
+        "bm25": {
+            "k1": 4.7,
+            "b": 0.2
+        },
+        "bm25+rm3": {
+            "k1": 4.7,
+            "b": 0.2,
+            "fb_terms": 30,
+            "fb_docs": 5,
+            "original_query_weight": 0.7
+        }
+    },
+    "4": {
+        "bm25": {
+            "k1": 4.5,
+            "b": 0.2
+        },
+        "bm25+rm3": {
+            "k1": 4.5,
+            "b": 0.2,
+            "fb_terms": 85,
+            "fb_docs": 5,
+            "original_query_weight": 0.6
+        }
+    }
+}

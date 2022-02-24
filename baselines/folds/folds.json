@@ -1,0 +1,46 @@
+{
+    "1": [
+        "economics-1",
+        "economics-6",
+        "economics-19",
+        "history-1",
+        "history-13",
+        "history-18",
+        "politics-1",
+        "politics-6",
+        "politics-16"
+    ],
+    "2": [
+        "economics-2",
+        "economics-12",
+        "economics-20",
+        "history-6",
+        "history-15",
+        "history-19",
+        "politics-3",
+        "politics-7",
+        "politics-20"
+    ],
+    "3": [
+        "economics-3",
+        "economics-17",
+        "economics-21",
+        "history-11",
+        "history-16",
+        "history-24",
+        "politics-4",
+        "politics-9",
+        "politics-22"
+    ],
+    "4": [
+        "economics-4",
+        "economics-18",
+        "economics-23",
+        "history-12",
+        "history-17",
+        "history-25",
+        "politics-5",
+        "politics-13",
+        "politics-23"
+    ]
+}
