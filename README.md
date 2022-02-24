@@ -238,6 +238,8 @@ KILT contains 5.9M preprocessed articles which is freely available to use: <a hr
 CODEC uses a 2-stage assessment approach to balance adequate coverage of current systems while allowing annotators to explore topics using iterative search system.
 This creates 5,130 document judgments (142.5 per topic) and 10,239 entity judgments (284.4 per topic):
 
+These raw judgements are released: <a href="https://github.com/grill-lab/CODEC/blob/main/raw_judgments">link</a>.
+
 <table class="tg">
 <thead>
   <tr>
@@ -306,6 +308,7 @@ We also release <a href="https://github.com/informagi/REL">REL</a> entity links 
  </ul> 
    
 <!-- Evaluation -->
+<h3 id="evaluation">Evaluation</h3>
 
 We provide TREC-style query-relevance files (entity rankings: <a href="https://github.com/grill-lab/CODEC/blob/main/qrels/entity.qrels">link</a>) and (document ranking: <a href="https://github.com/grill-lab/CODEC/blob/main/qrels/document.qrels">link</a>). 
 
