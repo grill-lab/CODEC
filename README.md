@@ -317,6 +317,22 @@ The official measures for both tasks include MAP, Recall@100 and Recall@1000, ND
 <!-- System Performance -->
 <h3 id="system-performance">System Performance</h3>
 
+<i>Systems:</i>
+
+Sparse retrieval <i>BM25</i> and <i>BM25+RM3</i> runs use <a href="https://github.com/castorini/pyserini">Pyserini</a> with Porter stemming and stopwords removed.
+We cross validate and release tuned paramters <a href="https://github.com/grill-lab/CODEC/blob/main/baselines/folds">here</a>.
+
+<a href="https://arxiv.org/abs/2007.00808">ANCE</a> is a dense retrieval model.
+We use an MS Marco fined-tune ANCE model and Pyserini’s wrapper for easy indexing.
+<i>ANCE+FirstP</i> takes the first 512 BERT tokens of each document to represent that document.
+ While <i>ANCE+MaxP</i> shards the document into a maximum of four 512-token shards, with the maximum score representing the document.
+ 
+ 
+<a href="https://aclanthology.org/2020.findings-emnlp.63.pdf">T5</a> is state-of-the-art LM re-ranker that casts text re-ranking into a sequence-to-sequence.
+<a href="https://github.com/castorini/pygaggle">Pygaggle’s</a> MonoT5 model, which is fine-tuned using MS Marco.
+We employ a max-passage approach similar to <a href="https://aclanthology.org/2020.findings-emnlp.63.pdf">Nogueira et al. (2020)</a> to re-rank all initial retrieval runs. 
+
+
 <i>Document ranking:</i>
 
 <table class="tg">
