@@ -62,7 +62,7 @@ This work is currently under review. More details and correct citation to follow
 <p> CODEC provides 36 topics for document and entity retrieval: </p> 
   <ul>
     <li><a href="https://github.com/grill-lab/CODEC/blob/main/topics/topics.json">Topics</a> 
-    <li><a href="https://github.com/grill-lab/CODEC/blob/main/topics/query_aspects_to_judgments.json">Query reformulations</a> 
+    <li><a href="https://github.com/grill-lab/CODEC/blob/main/topics/query_reformulations_to_judgments.json">Query reformulations</a> 
     <li><a href="https://github.com/grill-lab/CODEC/blob/main/qrels/document_binary.qrels">Document qrels</a></li>
     <li><a href="https://github.com/grill-lab/CODEC/blob/main/qrels/entity_binary.qrels">Entity qrels</a></li>
     <li><a href="https://github.com/grill-lab/CODEC/blob/main/baselines/folds/folds.json">Standard 5-folds</a></li>
@@ -74,9 +74,9 @@ This work is currently under review. More details and correct citation to follow
 CODEC full document corpus will be made available for research purpose on acceptable. 
 This is a <a href="https://codec-public-data.s3.amazonaws.com/sample_codec_documents.jsonl ">SAMPLE</a>.
 
-CODEC entity KB is <a href="https://ai.facebook.com/tools/kilt/">KILT's</a> snapshot of Wikipedia. 
+CODEC entity KB is <a href="https://ai.facebook.com/tools/kilt/">KILT's</a> snapshot of Wikipedia (~30GB). 
 
-We provide entity links over document corpus: <a href="https://codec-public-data.s3.amazonaws.com/codec_entity_links.jsonl">link</a>.  
+We provide entity links over document corpus: <a href="https://codec-public-data.s3.amazonaws.com/codec_entity_links.jsonl">link</a> (~13GB).  
 
 Colab demo (Pyserini): <a href="TODO">link</a>
 
@@ -279,7 +279,7 @@ This creates 5,130 document judgments (142.5 per topic) and 10,239 entity judgme
 <h3 id="query-reform">Query Reformulations</h3>
 
 During assessment process, researchers use a live search system to explore the complex topic.
-We release the full 331 queries and mapped relevance judgment: <a href="https://github.com/grill-lab/CODEC/blob/main/topics/query_aspects_to_judgments.json">link</a> 
+We release the full 331 queries and mapped relevance judgment: <a href="https://github.com/grill-lab/CODEC/blob/main/topics/query_reformulations_to_judgments.json">link</a> 
 
 An example of these manual query reformulations: 
 
