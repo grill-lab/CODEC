@@ -23,7 +23,8 @@
     <li><a href="#future-work">Future Work</a></li>
   </ol>
 
-Colab demo showing indexing, query reformulations, entity links, and evaluation: <a href="https://colab.research.google.com/drive/1omFhIpCSMZfwZ6Oj7ZcTWo00vpIrq0F2?usp=sharing">link</a>
+Colab demo showing indexing, query reformulations, entity links, and evaluation: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1omFhIpCSMZfwZ6Oj7ZcTWo00vpIrq0F2?usp=sharing)
+
 
 
 <!-- Overview -->
@@ -78,7 +79,7 @@ CODEC entity KB is <a href="https://ai.facebook.com/tools/kilt/">KILT's</a> snap
 
 We provide entity links over document corpus: <a href="https://codec-public-data.s3.amazonaws.com/codec_entity_links.jsonl">link</a> (~13GB).  
 
-Colab demo showing indexing, query reformulations, entity links, and evaluation: <a href="https://colab.research.google.com/drive/1omFhIpCSMZfwZ6Oj7ZcTWo00vpIrq0F2?usp=sharing">link</a>
+Colab demo showing indexing, query reformulations, entity links, and evaluation: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1omFhIpCSMZfwZ6Oj7ZcTWo00vpIrq0F2?usp=sharing)
 
 <!-- Change Log -->
 <h3 id="change-log">Change Log</h3>
