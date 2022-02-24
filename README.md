@@ -66,8 +66,8 @@ This work is currently under review. More details and correct citation to follow
     <li><a href="https://github.com/grill-lab/CODEC/blob/main/topics/query_reformulations_to_judgments.json">Query reformulations</a> 
     <li><a href="https://github.com/grill-lab/CODEC/blob/main/qrels/document.qrels">Document qrels</a></li>
     <li><a href="https://github.com/grill-lab/CODEC/blob/main/qrels/entity.qrels">Entity qrels</a></li>
-    <li><a href="https://github.com/grill-lab/CODEC/blob/main/baselines/folds/folds.json">Standard 5-folds</a></li>
-    <li><a href="https://github.com/grill-lab/CODEC/blob/main/baselines/runs">Baseline runs</a></li>
+    <li><a href="https://github.com/grill-lab/CODEC/blob/main/system_runs/folds/folds.json">Standard 5-folds</a></li>
+    <li><a href="https://github.com/grill-lab/CODEC/blob/main/system_runs/runs">Baseline runs</a></li>
 
   </ul> 
 
