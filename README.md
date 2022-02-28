@@ -81,7 +81,7 @@ We provide entity links over document corpus: <a href="https://codec-public-data
 
 Colab demo showing indexing, query reformulations, entity links, and evaluation: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1omFhIpCSMZfwZ6Oj7ZcTWo00vpIrq0F2?usp=sharing)
 
-Dataset is available via <a href="https://github.com/allenai/ir_datasets"><i>ir-datasets</i></a>
+Dataset is available via <a href="https://github.com/allenai/ir_datasets"><i>ir-datasets</i></a>.
 
 <!-- Change Log -->
 <h3 id="change-log">Change Log</h3>
