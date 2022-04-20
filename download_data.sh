@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Downloading CODEC (Documents Corpus)..."
-echo "*** FULL CORPUS WILL BE RELEASED ON ACCEPTANCE ***"
+wget  wget http://dl.fbaipublicfiles.com/KILT/codec_documents.jsonl -P "./data"
 
 echo "Downloading KILT (Entity KB)..."
 wget  wget http://dl.fbaipublicfiles.com/KILT/kilt_knowledgesource.json -P "./data"
