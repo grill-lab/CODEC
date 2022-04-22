@@ -2,7 +2,7 @@
 <br />
 <p align="center">
     <h1 align="center">CODEC</h1>
-    <h2 align="center">COmplex Document and Entity Collection</h2>
+    <h2 align="center">Complex Document and Entity Collection</h2>
 
 <!-- TABLE OF CONTENTS -->
   <h5>Table of Contents</h5>
@@ -32,48 +32,46 @@ Colab demo showing indexing, query reformulations, entity links, and evaluation:
 
 <p> 
 CODEC is a new document and entity ranking benchmark that focuses on complex research topics. 
-We target essay-style information needs of social science researchers across History, Economics, and Politics.
+We target essay-style information needs of social science researchers across history, economics, and politics.
 For example, ‘How has the UK’s Open Banking Regulation benefited Challenger Banks?’ 
 
 
-CODEC includes 36 topics developed by researchers and a new focused web corpus with semantic annotations including entity links. 
-It includes expert judgments on 5,130 document (142.5 per topic) and 10,239 entity (284.4 per topic) from diverse automatic and interactive manual runs. 
-The manual runs include over 300 query reformulations (9.3 per topic), providing data for query performance prediction and automatic rewriting evaluation. 
+CODEC includes 42 topics developed by researchers and a new focused web corpus with semantic annotations including entity links. 
+It includes expert judgments on 6,186 document (147.3 per topic) and 11,323 entity (269.6 per topic) from diverse automatic and interactive manual runs. 
+The manual runs include 387 query reformulations (9.2 per topic), providing data for query performance prediction and automatic rewriting evaluation. 
 </p>
 
 <p align="center">
     <img src="https://github.com/grill-lab/CODEC/blob/main/assets/overview.png" alt="CODEC Diagram" width="700" height="275" >
 
-
 <!-- Paper -->
 <h3 id="paper">Paper</h3>
 
-This work is currently under review. More details and correct citation to follow. 
+Correct citation to follow. 
 ```
 @inproceedings{mackie2022codec,\
  title={CODEC: Complex Document and Entity Collection},\
- author={Mackie, Iain and Owoicho, Paul and Gemmell, Carlos and Fischer, Sophie  and MacAvaney, Sean and Dalton, Jeffery},\
+ author={Mackie, Iain and Owoicho, Paul and Gemmell, Carlos and Fischer, Sophie and MacAvaney, Sean and Dalton, Jeffery},\
+ booktitle={Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval},
  year={2022}\
 }
 ```
 
-
 <!-- Dataset -->
 <h3 id="dataset">Dataset</h3>
-<p> CODEC provides 36 topics for document and entity retrieval: </p> 
+<p> CODEC provides 42 topics for document and entity retrieval: </p> 
   <ul>
     <li><a href="https://github.com/grill-lab/CODEC/blob/main/topics/topics.json">Topics</a> 
-    <li><a href="https://github.com/grill-lab/CODEC/blob/main/topics/query_reformulations_to_judgments.json">Query reformulations</a> 
-    <li><a href="https://github.com/grill-lab/CODEC/blob/main/qrels/document.qrels">Document qrels</a></li>
-    <li><a href="https://github.com/grill-lab/CODEC/blob/main/qrels/entity.qrels">Entity qrels</a></li>
-    <li><a href="https://github.com/grill-lab/CODEC/blob/main/system_runs/folds/folds.json">Standard 5-folds</a></li>
+    <li><a href="https://github.com/grill-lab/CODEC/blob/main/topics/query_reformulations.txt">Query reformulations</a> 
+    <li><a href="https://github.com/grill-lab/CODEC/blob/main/qrels">Qrels</a></li>
+    <li><a href="https://github.com/grill-lab/CODEC/blob/main/raw_judgments">Raw judgments</a></li>
+    <li><a href="https://github.com/grill-lab/CODEC/blob/main/system_runs/folds/folds.json">Standard 4-folds</a></li>
     <li><a href="https://github.com/grill-lab/CODEC/blob/main/system_runs/runs">Baseline runs</a></li>
-
   </ul> 
 
-
-CODEC full document corpus will be made available for research purpose on acceptable. 
-This is a <a href="https://codec-public-data.s3.amazonaws.com/sample_codec_documents.jsonl ">SAMPLE</a>.
+*** Please email i.mackie.1@research.gla.ac.uk for access *** 
+CODEC full document corpus is available for research purpose (you will be provided a link). 
+This is a <a href="https://codec-public-data.s3.amazonaws.com/sample_codec_documents.jsonl">SAMPLE</a>.
 
 CODEC entity KB is <a href="https://ai.facebook.com/tools/kilt/">KILT's</a> snapshot of Wikipedia (~30GB). 
 
@@ -88,7 +86,7 @@ Dataset is available via <a href="https://github.com/allenai/ir_datasets"><i>ir-
 
 Major dataset changes historic users should be aware:
 <ul>
-    <li> <b>None</b>.  
+    <li> <b>25th April</b>: CODEC v1 released.  
 </ul> 
 
 
@@ -113,7 +111,7 @@ Initial retrieval or re-ranking of provided baseline runs can both be evaluated 
 
 <!-- Complex Topics -->
 <h3 id="complex-topics">Complex Topics</h3>
-CODEC provides 36 complex topics which intend to benchmark the role of a researcher. 
+CODEC provides 42 complex topics which intend to benchmark the role of a researcher. 
 Social science experts from <b>history</b> (history teacher, published history scholar), <b>economics</b> (FX trader, accountant, investment banker) and <b>politics</b> (political scientists, politician) helped to generate interesting and factually-grounded topics. 
 The authors develop the following criteria for complex topics:
 <ul>
@@ -125,7 +123,7 @@ The authors develop the following criteria for complex topics:
    <li> <i>Requires knowledge</i>
  </ul> 
 
-Each topic contains a (1) query and (2) narrative. 
+Each topic contains a query and narrative. 
 The query is the question the researcher seeks to understand by exploring documents and entities, i.e., the text input posed to the search system. 
 The narratives provide an overview of the topic (key concepts, arguments, facts, etc.) and allow non-domain-experts to understand the topic. 
 
@@ -148,7 +146,6 @@ The corpus is released in jsonline format with following fields:
  </ul> 
 
 Document distribution:
-
 
 <table class="tg">
 <thead>
@@ -239,7 +236,7 @@ KILT contains 5.9M preprocessed articles which is freely available to use: <a hr
 <h3 id="judgments">Judgments</h3>
 
 CODEC uses a 2-stage assessment approach to balance adequate coverage of current systems while allowing annotators to explore topics using iterative search system.
-This creates 5,130 document judgments (142.5 per topic) and 10,239 entity judgments (284.4 per topic):
+This creates 6,186 document judgments (147.3 per topic) and 11,323 entity judgments (269.6 per topic):
 
 These raw judgements are released: <a href="https://github.com/grill-lab/CODEC/blob/main/raw_judgments">link</a>.
 
@@ -254,28 +251,28 @@ These raw judgements are released: <a href="https://github.com/grill-lab/CODEC/b
 <tbody>
   <tr>
     <td class="tg-kex3"><span style="font-weight:bold">0</span></td>
-    <td class="tg-2b7s"><span style="font-weight:normal">2,075</span></td>
-    <td class="tg-2b7s"><span style="font-weight:normal">6,665</span></td>
+    <td class="tg-2b7s"><span style="font-weight:normal">2,353</span></td>
+    <td class="tg-2b7s"><span style="font-weight:normal">7,053</span></td>
   </tr>
   <tr>
     <td class="tg-kex3"><span style="font-weight:bold">1</span></td>
-    <td class="tg-2b7s"><span style="font-weight:normal">1,819</span></td>
-    <td class="tg-2b7s"><span style="font-weight:normal">1,910</span></td>
+    <td class="tg-2b7s"><span style="font-weight:normal">2,210</span></td>
+    <td class="tg-2b7s"><span style="font-weight:normal">2,241</span></td>
   </tr>
   <tr>
     <td class="tg-kex3"><span style="font-weight:bold">2</span></td>
-    <td class="tg-2b7s"><span style="font-weight:normal">924</span></td>
-    <td class="tg-2b7s"><span style="font-weight:normal">1,038</span></td>
+    <td class="tg-2b7s"><span style="font-weight:normal">1,207</span></td>
+    <td class="tg-2b7s"><span style="font-weight:normal">1,252</span></td>
   </tr>
   <tr>
     <td class="tg-kex3"><span style="font-weight:bold">3</span></td>
-    <td class="tg-2b7s"><span style="font-weight:normal">312</span></td>
-    <td class="tg-2b7s"><span style="font-weight:normal">626</span></td>
+    <td class="tg-2b7s"><span style="font-weight:normal">416</span></td>
+    <td class="tg-2b7s"><span style="font-weight:normal">777</span></td>
   </tr>
   <tr>
     <td class="tg-j6zm"><span style="font-weight:bold">TOTAL</span></td>
-    <td class="tg-2b7s"><span style="font-weight:normal">5,130</span></td>
-    <td class="tg-2b7s"><span style="font-weight:normal">10,239</span></td>
+    <td class="tg-2b7s"><span style="font-weight:normal">6,186</span></td>
+    <td class="tg-2b7s"><span style="font-weight:normal">11,323</span></td>
   </tr>
 </tbody>
 </table>
@@ -284,7 +281,7 @@ These raw judgements are released: <a href="https://github.com/grill-lab/CODEC/b
 <h3 id="query-reform">Query Reformulations</h3>
 
 During assessment process, researchers use a live search system to explore the complex topic.
-We release the full 331 queries and mapped relevance judgment: <a href="https://github.com/grill-lab/CODEC/blob/main/topics/query_reformulations_to_judgments.json">link</a> 
+We release the full 387 queries and mapped relevance judgment: <a href="https://github.com/grill-lab/CODEC/blob/main/topics/query_reformulations_to_judgments.json">link</a> 
 
 An example of these manual query reformulations: 
 
@@ -315,7 +312,7 @@ We also release <a href="https://github.com/informagi/REL">REL</a> entity links 
 
 We provide TREC-style query-relevance files (entity rankings: <a href="https://github.com/grill-lab/CODEC/blob/main/qrels/entity.qrels">link</a>) and (document ranking: <a href="https://github.com/grill-lab/CODEC/blob/main/qrels/document.qrels">link</a>). 
 
-The official measures for both tasks include MAP, Recall@100 and Recall@1000, NDCG@10 and NDCG@1000.
+The official measures for both tasks include MAP, NDCG@10, and Recall@1000.
 
 <!-- System Performance -->
 <h3 id="system-performance">System Performance</h3>
@@ -344,59 +341,45 @@ We employ a max-passage approach similar to <a href="https://aclanthology.org/20
     <th class="tg-7zrl"></th>
     <th class="tg-j6zm"><span style="font-weight:bold">MAP</span></th>
     <th class="tg-j6zm"><span style="font-weight:bold">NDCG@10</span></th>
-    <th class="tg-j6zm"><span style="font-weight:bold">NDCG@1000</span></th>
-    <th class="tg-j6zm"><span style="font-weight:bold">Recall@100</span></th>
     <th class="tg-j6zm"><span style="font-weight:bold">Recall@1000</span></th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td class="tg-j6zm"><span style="font-weight:bold">BM25</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.208</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.401</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.528</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.485</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.760</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.213</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.322</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.762</span></td>
   </tr>
   <tr>
     <td class="tg-j6zm"><span style="font-weight:bold">BM25+RM3</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.223</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.389</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.547</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.512</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.795</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.233</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.327</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.800</span></td>
   </tr>
   <tr>
     <td class="tg-j6zm"><span style="font-weight:bold">ANCE-MaxP</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.193</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.430</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.509</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.412</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.719</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.186</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.363</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.689</span></td>
   </tr>
   <tr>
     <td class="tg-j6zm"><span style="font-weight:bold">BM25+T5</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.282</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.496</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.604</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.580</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.778</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.340</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.468</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.762</span></td>
   </tr>
   <tr>
     <td class="tg-j6zm"><span style="font-weight:bold">BM25+RM3+T5</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.287</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.513</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.615</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.586</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.795</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.346</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.472</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.800 </span></td>
   </tr>
   <tr>
     <td class="tg-j6zm"><span style="font-weight:bold">ANCE-MaxP+T5</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.278</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.505</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.585</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.554</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.719</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.316</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.481</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.689</span></td>
   </tr>
 </tbody>
 </table>
@@ -409,59 +392,45 @@ We employ a max-passage approach similar to <a href="https://aclanthology.org/20
     <th class="tg-7zrl"></th>
     <th class="tg-j6zm"><span style="font-weight:bold">MAP</span></th>
     <th class="tg-j6zm"><span style="font-weight:bold">NDCG@10</span></th>
-    <th class="tg-j6zm"><span style="font-weight:bold">NDCG@1000</span></th>
-    <th class="tg-j6zm"><span style="font-weight:bold">Recall@100</span></th>
     <th class="tg-j6zm"><span style="font-weight:bold">Recall@1000</span></th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td class="tg-j6zm"><span style="font-weight:bold">BM25</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.175</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.472</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.472</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.353</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.587</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.181</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.397</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.615</span></td>
   </tr>
   <tr>
     <td class="tg-j6zm"><span style="font-weight:bold">BM25+RM3</span></td>
-    <td class="tg-l2oz"><span style="font-weight:bold">0.196</span></td>
-    <td class="tg-l2oz"><span style="font-weight:bold">0.489</span></td>
-    <td class="tg-l2oz"><span style="font-weight:bold">0.51</span></td>
-    <td class="tg-l2oz"><span style="font-weight:bold">0.384</span></td>
-    <td class="tg-l2oz"><span style="font-weight:bold">0.656</span></td>
+    <td class="tg-l2oz"><span style="font-weight:bold">0.209</span></td>
+    <td class="tg-l2oz"><span style="font-weight:bold">0.412</span></td>
+    <td class="tg-l2oz"><span style="font-weight:bold">0.685</span></td>
   </tr>
   <tr>
     <td class="tg-j6zm"><span style="font-weight:bold">ANCE-FirstP</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.081</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.322</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.286</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.184</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.349</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.076</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.269</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.340</span></td>
   </tr>
   <tr>
     <td class="tg-j6zm"><span style="font-weight:bold">BM25+T5</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.141</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.388</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.44</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.344</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.587</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.172</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.361</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.615</span></td>
   </tr>
   <tr>
     <td class="tg-j6zm"><span style="font-weight:bold">BM25+RM3+T5</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.147</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.392</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.47</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.349</span></td>
-    <td class="tg-l2oz"><span style="font-weight:bold">0.656</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.179</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.362</span></td>
+    <td class="tg-l2oz"><span style="font-weight:bold">0.685</span></td>
   </tr>
   <tr>
     <td class="tg-j6zm"><span style="font-weight:bold">ANCE-FirstP+T5</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.126</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.44</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.339</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.272</span></td>
-    <td class="tg-lqy6"><span style="font-weight:normal">0.349</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.136</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.407</span></td>
+    <td class="tg-lqy6"><span style="font-weight:normal">0.340</span></td>
   </tr>
 </tbody>
 </table>

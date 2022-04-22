@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Downloading CODEC (Documents Corpus)..."
-wget  wget http://dl.fbaipublicfiles.com/KILT/codec_documents.jsonl -P "./data"
+wget  "*** email for access -->> i.mackie.1@research.gla.ac.uk ***"
 
 echo "Downloading KILT (Entity KB)..."
 wget  wget http://dl.fbaipublicfiles.com/KILT/kilt_knowledgesource.json -P "./data"
