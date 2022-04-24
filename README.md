@@ -49,11 +49,11 @@ The manual runs include 387 query reformulations (9.2 per topic), providing data
 
 Correct citation to follow. 
 ```
-@inproceedings{mackie2022codec,\
- title={CODEC: Complex Document and Entity Collection},\
- author={Mackie, Iain and Owoicho, Paul and Gemmell, Carlos and Fischer, Sophie and MacAvaney, Sean and Dalton, Jeffery},\
+@inproceedings{mackie2022codec,
+ title={CODEC: Complex Document and Entity Collection},
+ author={Mackie, Iain and Owoicho, Paul and Gemmell, Carlos and Fischer, Sophie and MacAvaney, Sean and Dalton, Jeffery},
  booktitle={Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval},
- year={2022}\
+ year={2022}
 }
 ```
 
