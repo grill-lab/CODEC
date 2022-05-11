@@ -47,7 +47,9 @@ The manual runs include 387 query reformulations (9.2 per topic), providing data
 <!-- Paper -->
 <h3 id="paper">Paper</h3>
 
-This work will be presented at SIGIR 2022. Correct citation: 
+This work will be presented at SIGIR 2022: https://arxiv.org/abs/2205.04546
+
+Correct citation: 
 ```
 @inproceedings{mackie2022codec,
  title={CODEC: Complex Document and Entity Collection},
