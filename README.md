@@ -71,8 +71,9 @@ Correct citation:
     <li><a href="https://github.com/grill-lab/CODEC/blob/main/system_runs/runs">Baseline runs</a></li>
   </ul> 
 
-*** Please email i.mackie.1@research.gla.ac.uk for access *** 
-CODEC full document corpus is available for research purpose (you will be provided a link). 
+
+CODEC full document corpus is available for research purpose: <a href="https://codec-public-data.s3.amazonaws.com/codec_documents.jsonl">FULL</a>.
+
 This is a <a href="https://codec-public-data.s3.amazonaws.com/sample_codec_documents.jsonl">SAMPLE</a>.
 
 CODEC entity KB is <a href="https://ai.facebook.com/tools/kilt/">KILT's</a> snapshot of Wikipedia (~30GB). 
