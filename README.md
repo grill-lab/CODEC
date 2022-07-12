@@ -72,9 +72,7 @@ Correct citation:
   </ul> 
 
 
-CODEC full document corpus is available for research purpose: <a href="https://codec-public-data.s3.amazonaws.com/codec_documents.jsonl">FULL</a>.
-
-This is a <a href="https://codec-public-data.s3.amazonaws.com/sample_codec_documents.jsonl">SAMPLE</a>.
+CODEC full document corpus is available for research purpose: <a href="https://codec-public-data.s3.amazonaws.com/codec_documents.jsonl">FULL</a>. This is a <a href="https://codec-public-data.s3.amazonaws.com/sample_codec_documents.jsonl">SAMPLE</a>.
 
 CODEC entity KB is <a href="https://ai.facebook.com/tools/kilt/">KILT's</a> snapshot of Wikipedia (~30GB). 
 
