@@ -331,7 +331,6 @@ politics-9	referendums and populism UK
 politics-9	What are the issue with binary referendums?
 politics-9	Was Brexit a fair and factual campaign?
 politics-9	Scottish referendum and societal divides
-politics-9	How have binary choices in referendums been a challenge for UK democracy over the last decade?
 politics-9	Does wording matter in referendums?
 politics-9	Is it fair Scottish referendum is once in a generation?
 politics-9	Should referendums need a supermajority?
