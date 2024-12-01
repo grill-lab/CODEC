@@ -72,11 +72,9 @@ Correct citation:
   </ul> 
 
 
-CODEC full document corpus is available for research purpose: <a href="https://codec-public-data.s3.amazonaws.com/codec_documents.jsonl">FULL</a>. This is a <a href="https://codec-public-data.s3.amazonaws.com/sample_codec_documents.jsonl">SAMPLE</a>.
+CODEC full document corpus is available for research purpose: <a href="https://huggingface.co/datasets/macavaney/codec">FULL</a>. 
 
 CODEC entity KB is <a href="https://ai.facebook.com/tools/kilt/">KILT's</a> snapshot of Wikipedia (~30GB). 
-
-We provide entity links over document corpus: <a href="https://codec-public-data.s3.amazonaws.com/codec_entity_links.jsonl">link</a> (~13GB).  
 
 Colab demo showing indexing, query reformulations, entity links, and evaluation: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1omFhIpCSMZfwZ6Oj7ZcTWo00vpIrq0F2?usp=sharing)
 
@@ -295,18 +293,6 @@ An example of these manual query reformulations:
 
 CODEC provides aligned document and entity judgments that allows for new entity-centric search models to be developed.
 
-We also release <a href="https://github.com/informagi/REL">REL</a> entity links grounding our document corpus to entity KD: <a href="https://codec-public-data.s3.amazonaws.com/codec_entity_links.jsonl">link</a>
-
-<ul>
-   <li> <b>mention</b>: <i>Text spans in document that is linked to entity.</i>
-   <li> <b>prediction</b>:  <i>Top predicted entity link (Wikipedia title). </i>
-   <li> <b>prediction_kilt</b>:  <i>We map prediction entity link to KILT id to align with entity KB and entity judgments.</i>
-   <li> <b>candidates</b>:  <i>Top-k entity link candidates (Wikipedia title).</i>
-   <li> <b>candidates_kilt</b>:  <i>We map candidates entity links to KILT ids to align with entity KB and entity judgments.</i>
-   <li> <b>conf_ed</b>:  <i>Score of Flair NER model.</i>
-   <li> <b>score</b>:  <i>Scores of REL candidate selection model.</i>
-
- </ul> 
    
 <!-- Evaluation -->
 <h3 id="evaluation">Evaluation</h3>
